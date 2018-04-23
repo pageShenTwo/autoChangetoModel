@@ -15,6 +15,9 @@
 		8EAC1FF7208D62DC007399AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EAC1FF5208D62DC007399AD /* LaunchScreen.storyboard */; };
 		8EAC2002208D62DC007399AD /* jsonTransFormModelFileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC2001208D62DC007399AD /* jsonTransFormModelFileTests.m */; };
 		8EAC200D208D62DC007399AD /* jsonTransFormModelFileUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC200C208D62DC007399AD /* jsonTransFormModelFileUITests.m */; };
+		8EAC201B208D67B4007399AD /* person.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EAC201A208D67B4007399AD /* person.plist */; };
+		8EAC201E208D67CE007399AD /* NSObject+prototyWithModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC201D208D67CE007399AD /* NSObject+prototyWithModel.m */; };
+		8EAC2021208D6A0A007399AD /* person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC2020208D6A0A007399AD /* person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		8EAC2008208D62DC007399AD /* jsonTransFormModelFileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jsonTransFormModelFileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAC200C208D62DC007399AD /* jsonTransFormModelFileUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jsonTransFormModelFileUITests.m; sourceTree = "<group>"; };
 		8EAC200E208D62DC007399AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EAC201A208D67B4007399AD /* person.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = person.plist; sourceTree = "<group>"; };
+		8EAC201C208D67CE007399AD /* NSObject+prototyWithModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+prototyWithModel.h"; sourceTree = "<group>"; };
+		8EAC201D208D67CE007399AD /* NSObject+prototyWithModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+prototyWithModel.m"; sourceTree = "<group>"; };
+		8EAC201F208D6A0A007399AD /* person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
+		8EAC2020208D6A0A007399AD /* person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		8EAC1FE6208D62DC007399AD /* jsonTransFormModelFile */ = {
 			isa = PBXGroup;
 			children = (
+				8EAC201C208D67CE007399AD /* NSObject+prototyWithModel.h */,
+				8EAC201D208D67CE007399AD /* NSObject+prototyWithModel.m */,
 				8EAC1FEA208D62DC007399AD /* AppDelegate.h */,
 				8EAC1FEB208D62DC007399AD /* AppDelegate.m */,
 				8EAC1FED208D62DC007399AD /* ViewController.h */,
@@ -109,7 +119,10 @@
 				8EAC1FF3208D62DC007399AD /* Assets.xcassets */,
 				8EAC1FF5208D62DC007399AD /* LaunchScreen.storyboard */,
 				8EAC1FF8208D62DC007399AD /* Info.plist */,
+				8EAC201A208D67B4007399AD /* person.plist */,
 				8EAC1FE7208D62DC007399AD /* Supporting Files */,
+				8EAC201F208D6A0A007399AD /* person.h */,
+				8EAC2020208D6A0A007399AD /* person.m */,
 			);
 			path = jsonTransFormModelFile;
 			sourceTree = "<group>";
@@ -207,6 +220,7 @@
 				TargetAttributes = {
 					8EAC1FE3208D62DC007399AD = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7MEQPTT65A;
 						ProvisioningStyle = Automatic;
 					};
 					8EAC1FFC208D62DC007399AD = {
@@ -247,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAC1FF7208D62DC007399AD /* LaunchScreen.storyboard in Resources */,
+				8EAC201B208D67B4007399AD /* person.plist in Resources */,
 				8EAC1FF4208D62DC007399AD /* Assets.xcassets in Resources */,
 				8EAC1FF2208D62DC007399AD /* Main.storyboard in Resources */,
 			);
@@ -274,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EAC1FEF208D62DC007399AD /* ViewController.m in Sources */,
+				8EAC2021208D6A0A007399AD /* person.m in Sources */,
 				8EAC1FEC208D62DC007399AD /* AppDelegate.m in Sources */,
 				8EAC1FE9208D62DC007399AD /* main.m in Sources */,
+				8EAC201E208D67CE007399AD /* NSObject+prototyWithModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +443,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7MEQPTT65A;
 				INFOPLIST_FILE = jsonTransFormModelFile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dcafsdf.jsonTransFormModelFile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,7 +456,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7MEQPTT65A;
 				INFOPLIST_FILE = jsonTransFormModelFile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dcafsdf.jsonTransFormModelFile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +530,7 @@
 				8EAC2013208D62DC007399AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EAC2014208D62DC007399AD /* Build configuration list for PBXNativeTarget "jsonTransFormModelFileTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +539,7 @@
 				8EAC2016208D62DC007399AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EAC2017208D62DC007399AD /* Build configuration list for PBXNativeTarget "jsonTransFormModelFileUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +548,7 @@
 				8EAC2019208D62DC007399AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+prototyWithModel.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIButton *click = [UIButton buttonWithType:UIButtonTypeCustom];
+    [click setTitle:@"click Me" forState:UIControlStateNormal];
+    [click setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    click.center = self.view.center;
+    click.frame = self.view.bounds;
+    [click addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:click];
+}
+
+- (void)click{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"person" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    [NSObject prototyWithModel:dict modelName:@"person"];
 }
 
 
